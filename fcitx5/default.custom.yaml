@@ -1,0 +1,6 @@
+patch:
+    schema_list:
+        - schema: luna_pinyin_simp      # 简体拼音
+    translator:
+        enable_user_dict: true      # 启用用户词典
+        enable_sentence: true       # 允许整句输入
