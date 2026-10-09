@@ -11,3 +11,7 @@ remove google-chrome-stable* vim* rhythmbox
 # 添加 Neovim 官方 PPA
 sudo add-apt-repository -y ppa:neovim-ppa/unstable
 update && install build-essential gcc g++ gdb cmake git curl wget neovim rustup
+
+# 安装Neovim插件管理器LazyVim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git

@@ -12,7 +12,7 @@ update() {
 
 # 安装软件包
 install() {
-    update
+    sudo apt update
     for package in "$@"; do
         if [ "$package" = "code" ]; then
             sudo ./tools/install-vscode.sh
@@ -29,7 +29,7 @@ remove() {
     for package in "$@"; do
         sudo apt remove --purge "$package" -y
     done
-    clean
+    sudo apt autoremove -y && sudo apt autoclean -y
 }
 # 清理系统
 alias clean='sudo apt autoremove -y && sudo apt autoclean -y'
