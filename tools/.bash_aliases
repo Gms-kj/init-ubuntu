@@ -1,7 +1,7 @@
 # 自定义命令
 
 # 更新软件
-upgdate() {
+update() {
     sudo apt update
     if [ $# -eq 0 ]; then
         sudo apt upgrade -y
@@ -10,10 +10,9 @@ upgdate() {
     fi
 }
 
-# 清理系统
-alias clean='sudo apt autoremove -y && sudo apt autoclean -y'
-
+# 安装软件包
 install() {
+    update
     for package in "$@"; do
         if [ "$package" = "code" ]; then
             sudo ./tools/install-vscode.sh
@@ -24,3 +23,13 @@ install() {
         fi
     done
 }
+
+# 卸载软件包
+remove() {
+    for package in "$@"; do
+        sudo apt remove --purge "$package" -y
+    done
+    clean
+}
+# 清理系统
+alias clean='sudo apt autoremove -y && sudo apt autoclean -y'
