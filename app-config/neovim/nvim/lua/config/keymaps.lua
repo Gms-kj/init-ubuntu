@@ -24,3 +24,15 @@ keymap.set({ "n", "i" }, "<C-r>", "<cmd>redo<cr>", { silent = true, desc = "重�
 -- keymap.set("n", "<leader>c", "<cmd>close<cr>")  -- 关闭当前窗口
 -- keymap.set("n", "<leader>j", "<cmd>wincmd j<cr>")  -- 移动到下一个窗口
 -- keymap.set("n", "<leader>k", "<cmd>wincmd k<cr>")  -- 移动到上一个窗口
+
+-- ------------- 文件树按键映射 ------------- --
+keymap.set({ "n", "i" }, "<leader>e", function()
+    -- 如果当前是 netrw 窗口则关闭
+    if vim.bo.filetype == "netrw" then
+        vim.cmd("bwipeout")
+    else
+        -- 垂直分割打开当前文件所在目录
+        vim.cmd("Vexplore" .. vim.fn.expand("%:p:h"))
+        vim.cmd("vertical resize 25")
+    end
+end, { noremap = true })
