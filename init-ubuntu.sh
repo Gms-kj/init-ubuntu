@@ -10,7 +10,7 @@ remove google-chrome-stable* vim* rhythmbox vlc* gnome-text-editor ibus* mozc*
 
 # 添加 Neovim 官方 PPA
 sudo add-apt-repository -y ppa:neovim-ppa/unstable
-update && install build-essential gcc g++ gdb cmake git curl wget npm neovim xclip rustup fcitx5 fcitx5-rime
+update && install build-essential gcc g++ gdb cmake git curl wget npm neovim xclip ripgrep fd-find rustup fcitx5 fcitx5-rime
 
 # 安装 nerd-fonts
 curl -s https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/install.sh -o install.sh
