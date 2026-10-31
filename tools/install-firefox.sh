@@ -19,4 +19,4 @@ Pin-Priority: 1000
 EOF
 # 更新软件包列表并安装 Firefox 和其中文语言包
 sudo apt update
-sudo apt install firefox-l10n-zh-cn -y
+sudo apt install firefox-l10n-zh-cn
