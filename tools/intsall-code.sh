@@ -19,4 +19,4 @@ Architectures: amd64,arm64,armhf
 Signed-By: /usr/share/keyrings/microsoft.gpg
 EOF
 # 更新软件包列表并安装 Visual Studio Code
-sudo apt update && sudo apt install code -y
+sudo apt update && sudo apt install code
