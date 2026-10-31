@@ -6,7 +6,7 @@ cp ./tools/.bash_aliases ~/.bash_aliases
 source ~/.bashrc
 
 # 卸载不需要的软件包
-remove google-chrome-stable* libreoffice* rhythmbox* byobu* tilix* remmina* shotwell* vlc* vim* transmission* ibus* mozc* gnome-text-editor* nano*
+remove firefox* thunderbired* google-chrome-stable* libreoffice* rhythmbox* byobu* tilix* remmina* shotwell* vlc* vim* transmission* ibus* mozc* gnome-text-editor* nano*
 
 # 添加 Neovim 官方 PPA
 sudo add-apt-repository -y ppa:neovim-ppa/unstable
