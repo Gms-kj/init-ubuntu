@@ -27,3 +27,5 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/JetBrainsM
 # 安装Neovim插件管理器LazyVim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
+rm -rf ~/.config/nvim/README.md
+rm -rf ~/.config/nvim/LICENSE
