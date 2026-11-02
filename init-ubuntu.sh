@@ -12,13 +12,19 @@ echo 'export RUSTUP_DIST_SERVER=https://mirrors.aliyun.com/rustup' >> ~/.bash_pr
 source ~/.bash_profile
 
 # 安装rust
-rustup install stablegit
+rustup install stable
 
 # 安装 nerd-fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/JetBrainsMono.tar.xz
+sudo mkdir /usr/share/fonts/myfonts
+sudo tar -xJf ~/init-ubuntu/JetBrainsMono.tar.xz -C /usr/share/fonts/myfonts/
+rm -rf ~/init-ubuntu/JetBrainsMono.tar.xz
+rm -rf /usr/share/fonts/myfonts/OFL.txt
+rm -rf /usr/share/fonts/myfonts/README.md
 
 # 安装Neovim插件管理器LazyVim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 rm -rf ~/.config/nvim/README.md
 rm -rf ~/.config/nvim/LICENSE
+rm -rf ~/.config/nvim/.gitignore
