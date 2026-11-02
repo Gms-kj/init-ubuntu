@@ -15,7 +15,7 @@ source ~/.bash_profile
 rustup install stable
 
 # 安装 nerd-fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/JetBrainsMono.tar.xz
+wget -P ~/init-ubuntu/ https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/JetBrainsMono.tar.xz
 sudo mkdir /usr/share/fonts/myfonts
 sudo tar -xJf ~/init-ubuntu/JetBrainsMono.tar.xz -C /usr/share/fonts/myfonts/
 rm -rf ~/init-ubuntu/JetBrainsMono.tar.xz
