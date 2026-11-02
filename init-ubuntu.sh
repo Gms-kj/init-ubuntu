@@ -1,13 +1,6 @@
 #!/bin/bash
 # 初始化 Ubuntu 系统的脚本
 
-# 卸载不需要的软件包
-sudo apt update
-sudo apt remove --purge firefox* thunderbired* google-chrome-stable* libreoffice* rhythmbox* byobu* tilix* remmina* shotwell* vlc* vim* transmission* ibus* mozc* gnome-text-editor* nano*
-sudo apt autoremove
-sudo snap remove --purge firefox thunderbired
-sudo snap refresh
-
 # 添加 Neovim 官方 PPA
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt update && install build-essential gcc g++ gdb cmake git curl wget npm xclip ripgrep fd-find rustup python3-venv fcitx5 fcitx5-rime
@@ -19,7 +12,7 @@ echo 'export RUSTUP_DIST_SERVER=https://mirrors.aliyun.com/rustup' >> ~/.bash_pr
 source ~/.bash_profile
 
 # 安装rust
-rustup install stable
+rustup install stablegit
 
 # 安装 nerd-fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/JetBrainsMono.tar.xz
