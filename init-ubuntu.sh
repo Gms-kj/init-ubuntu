@@ -21,6 +21,7 @@ sudo tar -xJf ~/init-ubuntu/JetBrainsMono.tar.xz -C /usr/share/fonts/myfonts/
 rm -rf ~/init-ubuntu/JetBrainsMono.tar.xz
 rm -rf /usr/share/fonts/myfonts/OFL.txt
 rm -rf /usr/share/fonts/myfonts/README.md
+fc-cache -fv
 
 # 安装Neovim插件管理器LazyVim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
