@@ -1,7 +1,4 @@
 #!/bin/bash
 # 初始化 Ubuntu 系统的脚本
 
-sudo apt update && sudo apt install build-essential gcc g++ gdb cmake git curl wget npm xclip ripgrep fd-find python3-venv fcitx5 fcitx5-rime
-
-# 更换npm和rustup镜像源
-npm config set registry https://registry.npmmirror.com
+sudo apt update && sudo apt install build-essential gcc g++ gdb cmake git curl wget python3-venv
