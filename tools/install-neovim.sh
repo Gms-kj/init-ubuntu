@@ -2,7 +2,7 @@
 
 # 添加 Neovim 官方 PPA
 sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt install neovim xclip ripgrep fd-find
+sudo apt install neovim xclip ripgrep fd-find -y
 
 # 安装 nerd-fonts
 # wget -P ~/init-ubuntu/ https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/JetBrainsMono.tar.xz
