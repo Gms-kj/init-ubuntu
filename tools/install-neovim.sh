@@ -5,10 +5,10 @@ sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt install neovim xclip ripgrep fd-find
 
 # 安装 nerd-fonts
-wget -P ~/init-ubuntu/ https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/JetBrainsMono.tar.xz
+# wget -P ~/init-ubuntu/ https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/JetBrainsMono.tar.xz
 sudo mkdir /usr/share/fonts/myfonts
-sudo tar -xJf ~/init-ubuntu/JetBrainsMono.tar.xz -C /usr/share/fonts/myfonts/
-rm -rf ~/init-ubuntu/JetBrainsMono.tar.xz
+sudo tar -xJf ~/init-ubuntu/source/JetBrainsMono.tar.xz -C /usr/share/fonts/myfonts/
+# rm -rf ~/init-ubuntu/JetBrainsMono.tar.xz
 rm -rf /usr/share/fonts/myfonts/OFL.txt
 rm -rf /usr/share/fonts/myfonts/README.md
 fc-cache -fv
