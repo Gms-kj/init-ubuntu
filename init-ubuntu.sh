@@ -10,7 +10,10 @@ chmod +x ~/init-ubuntu/tools/*.sh
 ~/init-ubuntu/tools/install-rust.sh
 ~/init-ubuntu/tools/install-code.sh
 
-# 4. 设置 GNOME Terminal 默认字体为 Nerd Font
+# 设置 GNOME Terminal 默认字体为 Nerd Font
 gsettings set org.gnome.desktop.interface monospace-font-name "JetBrainsMono Nerd Font 16"
-gsettings set org.gnome.desktop.background picture-uri 'file:///home/admin/init-ubuntu/source/bizhi.jpg'
-gsettings set org.gnome.desktop.background picture-uri-dark 'file:///home/admin/init-ubuntu/source/bizhi.jpg'
+
+# 壁纸设置
+cp /home/admin/init-ubuntu/source/bizhi.jpg /home/admin/.local/share/backgrounds/bizhi.jpg
+gsettings set org.gnome.desktop.background picture-uri 'file:///home/admin/.local/share/backgrounds/bizhi.jpg'
+gsettings set org.gnome.desktop.background picture-uri-dark 'file:///home/admin/.local/share/backgrounds/bizhi.jpg'
