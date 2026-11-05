@@ -17,3 +17,5 @@ gsettings set org.gnome.desktop.interface monospace-font-name "JetBrainsMono Ner
 cp /home/admin/init-ubuntu/source/bizhi.jpg /home/admin/.local/share/backgrounds/bizhi.jpg
 gsettings set org.gnome.desktop.background picture-uri 'file:///home/admin/.local/share/backgrounds/bizhi.jpg'
 gsettings set org.gnome.desktop.background picture-uri-dark 'file:///home/admin/.local/share/backgrounds/bizhi.jpg'
+
+gsettings set org.gnome.shell/favorite-apps ['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Terminal.desktop', 'org.neovim.nvim.desktop', 'com.microsoft.VSCode.desktop']
