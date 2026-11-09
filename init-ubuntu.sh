@@ -12,6 +12,9 @@ chmod +x ~/init-ubuntu/tools/*.sh
 ~/init-ubuntu/tools/install-rust.sh
 ~/init-ubuntu/tools/install-code.sh
 
+mkdir ~/application
+mkdir ~/projects
+
 # 设置 GNOME Terminal 默认字体为 Nerd Font
 # gsettings set org.gnome.desktop.interface monospace-font-name "JetBrainsMono Nerd Font 16"
 
