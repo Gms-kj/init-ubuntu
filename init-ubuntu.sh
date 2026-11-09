@@ -8,7 +8,7 @@ chmod +x ~/init-ubuntu/tools/*.sh
 ~/init-ubuntu/tools/install-firefox.sh
 ~/init-ubuntu/tools/install-neovim.sh
 ~/init-ubuntu/tools/install-pyvenv.sh
-~/init-ubuntu/tools/install-npm.sh
+~/init-ubuntu/tools/install-nodejs.sh
 ~/init-ubuntu/tools/install-rust.sh
 ~/init-ubuntu/tools/install-code.sh
 
